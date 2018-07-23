@@ -1,8 +1,8 @@
-all: libsum.so
+all: libbinaryheap.so
 
 
-libsum.so: src/sum.cpp
-	g++ -g -fPIC -Wall -Werror -shared src/sum.cpp -o build/libsum.so
+libbinaryheap.so: src/binaryheap.cpp
+	g++ -g -fPIC -Wall -Werror -shared src/binaryheap.cpp -o build/libbinaryheap.so
 
 clean:
 	rm -f build/*.o build/*.so
